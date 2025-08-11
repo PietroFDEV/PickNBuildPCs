@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PickNBuildPCs — Custom & Prebuilt PCs in Liverpool</title>
+    <meta
+      name="description"
+      content="PickNBuildPCs in Liverpool: choose components with us and we build your dream PC, or pick from our curated prebuilt rigs. Mobile-first, dark neon layout."
+    />
+    <meta name="theme-color" content="#00e5ff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="logo" aria-label="PickNBuildPCs home">
+          <span class="logo__mark">⚡</span>
+          <span class="logo__text">PickNBuildPCs</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+          <ul>
+            <li><a href="#prebuilts">Prebuilt PCs</a></li>
+            <li><a href="#build">Build Your Own</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="section hero">
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <h1>
+              Build or Pick. <span class="gradient">Your Dream PC</span>.
+            </h1>
+            <p class="subtitle">
+              Liverpool-based custom builds and curated prebuilts. Choose your
+              parts with us and we’ll assemble, test, and deliver.
+            </p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#build">Start a custom build</a>
+              <a class="btn btn--ghost" href="#prebuilts">Browse prebuilts</a>
+            </div>
+            <p class="trust">
+              Serving Liverpool and surrounding areas — expert guidance, fair
+              pricing, local support.
+            </p>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="pc-visual">
+              <div class="pc-visual__glow"></div>
+              <div class="pc-visual__case">
+                <div class="pc-visual__fan fan-1"></div>
+                <div class="pc-visual__fan fan-2"></div>
+                <div class="pc-visual__fan fan-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prebuilts" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Curated Prebuilt PCs</h2>
+            <p class="muted">
+              Hand-picked configurations for gaming, content creation and
+              everyday performance.
+            </p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <div class="card__media" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Liverpool Starter</h3>
+                <ul class="specs">
+                  <li>AMD Ryzen 5 | 16 GB RAM</li>
+                  <li>NVIDIA GTX 1660 Super</li>
+                  <li>500 GB NVMe SSD</li>
+                </ul>
+                <div class="price">£699</div>
+                <div class="card__actions">
+                  <button class="btn btn--secondary" data-open-details="#pb-1"
+                    >View details</button
+                  >
+                  <a class="btn btn--primary" href="#contact">Enquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Mersey Gamer</h3>
+                <ul class="specs">
+                  <li>Intel Core i5 | 32 GB RAM</li>
+                  <li>NVIDIA RTX 3060 Ti</li>
+                  <li>1 TB NVMe SSD</li>
+                </ul>
+                <div class="price">£1,099</div>
+                <div class="card__actions">
+                  <button class="btn btn--secondary" data-open-details="#pb-2"
+                    >View details</button
+                  >
+                  <a class="btn btn--primary" href="#contact">Enquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Anfield Pro</h3>
+                <ul class="specs">
+                  <li>AMD Ryzen 7 | 32 GB RAM</li>
+                  <li>NVIDIA RTX 4070</li>
+                  <li>2 TB NVMe SSD</li>
+                </ul>
+                <div class="price">£1,799</div>
+                <div class="card__actions">
+                  <button class="btn btn--secondary" data-open-details="#pb-3"
+                    >View details</button
+                  >
+                  <a class="btn btn--primary" href="#contact">Enquire</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Prebuilt details modals -->
+        <div id="pb-1" class="modal" role="dialog" aria-modal="true" aria-labelledby="pb-1-title" aria-hidden="true">
+          <div class="modal__content">
+            <h3 id="pb-1-title">Liverpool Starter — Full Specs</h3>
+            <ul class="specs specs--cols">
+              <li>CPU: AMD Ryzen 5 5600</li>
+              <li>GPU: NVIDIA GTX 1660 Super 6 GB</li>
+              <li>RAM: 16 GB DDR4 3200 MHz</li>
+              <li>Storage: 500 GB NVMe SSD</li>
+              <li>PSU: 550 W 80+ Bronze</li>
+              <li>Case: Airflow micro-ATX</li>
+              <li>OS: Windows 11 Home</li>
+              <li>Warranty: 2 years</li>
+            </ul>
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="#contact">Enquire</a>
+              <button class="btn btn--ghost" data-close>Close</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="pb-2" class="modal" role="dialog" aria-modal="true" aria-labelledby="pb-2-title" aria-hidden="true">
+          <div class="modal__content">
+            <h3 id="pb-2-title">Mersey Gamer — Full Specs</h3>
+            <ul class="specs specs--cols">
+              <li>CPU: Intel Core i5-12600K</li>
+              <li>GPU: NVIDIA RTX 3060 Ti 8 GB</li>
+              <li>RAM: 32 GB DDR4 3600 MHz</li>
+              <li>Storage: 1 TB NVMe SSD</li>
+              <li>PSU: 650 W 80+ Gold</li>
+              <li>Case: Mid-tower RGB</li>
+              <li>OS: Windows 11 Home</li>
+              <li>Warranty: 3 years</li>
+            </ul>
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="#contact">Enquire</a>
+              <button class="btn btn--ghost" data-close>Close</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="pb-3" class="modal" role="dialog" aria-modal="true" aria-labelledby="pb-3-title" aria-hidden="true">
+          <div class="modal__content">
+            <h3 id="pb-3-title">Anfield Pro — Full Specs</h3>
+            <ul class="specs specs--cols">
+              <li>CPU: AMD Ryzen 7 7800X3D</li>
+              <li>GPU: NVIDIA RTX 4070 12 GB</li>
+              <li>RAM: 32 GB DDR5 6000 MHz</li>
+              <li>Storage: 2 TB NVMe SSD</li>
+              <li>PSU: 750 W 80+ Gold</li>
+              <li>Case: Premium airflow</li>
+              <li>OS: Windows 11 Home</li>
+              <li>Warranty: 3 years</li>
+            </ul>
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="#contact">Enquire</a>
+              <button class="btn btn--ghost" data-close>Close</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="build" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Build Your Own</h2>
+            <p class="muted">
+              Shortlist parts below and we’ll finalise your build together.
+              Prices are estimates; availability may vary.
+            </p>
+          </div>
+
+          <form class="build-form" aria-describedby="build-note">
+            <div class="build-grid">
+              <fieldset class="field">
+                <legend>CPU</legend>
+                <label class="option">
+                  <input type="radio" name="cpu" data-price="120" checked />
+                  <span>Ryzen 5 (from £120)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="cpu" data-price="210" />
+                  <span>Ryzen 7 (from £210)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="cpu" data-price="280" />
+                  <span>Intel i7 (from £280)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Graphics</legend>
+                <label class="option">
+                  <input type="radio" name="gpu" data-price="250" checked />
+                  <span>RTX 3060 (from £250)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="gpu" data-price="420" />
+                  <span>RTX 4060 Ti (from £420)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="gpu" data-price="590" />
+                  <span>RTX 4070 (from £590)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Memory</legend>
+                <label class="option">
+                  <input type="radio" name="ram" data-price="40" checked />
+                  <span>16 GB (from £40)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="ram" data-price="70" />
+                  <span>32 GB (from £70)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Storage</legend>
+                <label class="option">
+                  <input type="radio" name="storage" data-price="45" checked />
+                  <span>500 GB NVMe (from £45)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="storage" data-price="75" />
+                  <span>1 TB NVMe (from £75)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="storage" data-price="140" />
+                  <span>2 TB NVMe (from £140)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Case</legend>
+                <label class="option">
+                  <input type="radio" name="case" data-price="50" checked />
+                  <span>Micro-ATX (from £50)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="case" data-price="90" />
+                  <span>Mid Tower RGB (from £90)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Power Supply</legend>
+                <label class="option">
+                  <input type="radio" name="psu" data-price="45" checked />
+                  <span>550 W Bronze (from £45)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="psu" data-price="75" />
+                  <span>750 W Gold (from £75)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Cooling</legend>
+                <label class="option">
+                  <input type="radio" name="cooling" data-price="25" checked />
+                  <span>Air (from £25)</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="cooling" data-price="75" />
+                  <span>240 mm AIO (from £75)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Operating System</legend>
+                <label class="option">
+                  <input type="radio" name="os" data-price="0" checked />
+                  <span>No OS</span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="os" data-price="105" />
+                  <span>Windows 11 Home (from £105)</span>
+                </label>
+              </fieldset>
+            </div>
+
+            <p id="build-note" class="muted small">
+              Final pricing includes build, cable management, thermal paste,
+              stress testing and Windows install/activation when selected.
+            </p>
+
+            <div class="estimate">
+              <div>
+                <div class="estimate__label">Estimated total</div>
+                <div class="estimate__value" id="estimateTotal">£0</div>
+              </div>
+              <a class="btn btn--primary" href="#contact">Request a quote</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Get in Touch</h2>
+            <p class="muted">Local builds for Liverpool and surrounding areas.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="https://instagram.com/picknbuildpcs" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="3.5"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span>Instagram</span>
+            </a>
+
+            <a class="contact-card" href="https://facebook.com/picknbuildpcs" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path d="M13.5 9H16V6h-2.5C11.6 6 11 7.4 11 9v2H9v3h2v7h3v-7h2.2l.8-3H14V9.7c0-.5.2-.7.5-.7z"/>
+                </svg>
+              </span>
+              <span>Facebook</span>
+            </a>
+
+            <a class="contact-card" href="mailto:support@picknbuildpcs.co.uk">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 6h16v12H4z"/>
+                  <path d="M4 7l8 6 8-6"/>
+                </svg>
+              </span>
+              <span>Email</span>
+            </a>
+
+            <a class="contact-card" href="tel:+447123456789">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.9v2.2a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 3.9 2 2 0 0 1 4 1.7h2.2A2 2 0 0 1 8.3 3l.6 2.4a2 2 0 0 1-.5 1.9l-1 1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 1.9-.5l2.4.6a2 2 0 0 1 1.3 1.9z" />
+                </svg>
+              </span>
+              <span>UK: 07123 456789</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> PickNBuildPCs — Liverpool, UK</p>
+        <nav aria-label="Footer">
+          <a href="#prebuilts">Prebuilt PCs</a>
+          <a href="#build">Build Your Own</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  
+</html>
+
+
